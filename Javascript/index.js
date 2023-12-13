@@ -7,7 +7,7 @@ function updateTime() {
 
     londonDateElemnet.innerHTML = londonTime.format("MMMM Do YYYY");
     londonTimeElemnet.innerHTML = londonTime.format(
-        "h:mm:ss:SS [<small>]A[</small>]"
+        "h:mm:ss [<small>]A[</small>]"
     );
 
 
@@ -19,7 +19,7 @@ function updateTime() {
 
     milanDateElemnet.innerHTML = milanTime.format("MMMM Do YYYY");
     milanTimeElemnet.innerHTML = milanTime.format(
-        "h:mm:ss:SS [<small>]A[</small>]"
+        "h:mm:ss [<small>]A[</small>]"
     );
 
 
@@ -34,7 +34,7 @@ function updateTime() {
 
     newYorkDateElemnet.innerHTML = newYorkTime.format("MMMM Do YYYY");
     newYorkTimeElemnet.innerHTML = newYorkTime.format(
-        "h:mm:ss:SS [<small>]A[</small>]"
+        "h:mm:ss [<small>]A[</small>]"
     );
 }
 
@@ -53,15 +53,8 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
         </div>
         <div class="time">${cityTime.format("h:mm:ss:")}<small> ${cityTime.format("A")}</small>
-            </div >
-
-
-            <br/>
-            <a href="index.html"> Back to All Cities </a>
-    `;
+            </div > `;
 }
-
-
 updateTime();
 setInterval(updateTime, 1);
 
